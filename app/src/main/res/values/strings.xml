@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">H5AppDemo1</string>
+    <string name="button_name">跳转1</string>
 </resources>
