@@ -26,8 +26,21 @@
 
         <TextView
             android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display result data"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Display result data" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Pleas input you name..."
+            />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
