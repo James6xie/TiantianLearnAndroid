@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.MultiAutoCompleteTextView;
 
 
 /**
@@ -21,6 +22,7 @@ public class SActivity extends AppCompatActivity {
     private AutoCompleteTextView autoCompleteTextView;
     //data resource
     private String[] res = {"beijin","beijin1","beijinnihao","beijincheng","beijing2","beijing3"};
+    private MultiAutoCompleteTextView multiAutoCompleteTextView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,11 +42,17 @@ public class SActivity extends AppCompatActivity {
 
         //initial autoCompleteTextView widget
         autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
+        multiAutoCompleteTextView = findViewById(R.id.multiAutoCompleteTextView);
 
         //create adapter
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,res);
+        ArrayAdapter<String> arrayAdapterM = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,res);
 
         //adapter bind with widget
         autoCompleteTextView.setAdapter(arrayAdapter);
+        multiAutoCompleteTextView.setAdapter(arrayAdapterM);
+
+        //set comma split
+        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
     }
 }

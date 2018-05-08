@@ -3,4 +3,5 @@
     <string name="button_name">跳转1</string>
     <string name="tiantian_textview">跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!跑马灯!!</string>
     <string name="AutoCTextView">搜索</string>
+    <string name="MultiAutoCompleteTextView">多搜索</string>
 </resources>
