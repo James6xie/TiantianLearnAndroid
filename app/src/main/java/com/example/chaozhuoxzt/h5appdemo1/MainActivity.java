@@ -7,13 +7,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button bt1;
     private Button bt2;
-    private Button imgbt;
+    private ImageButton imgbt;
     private Context context;
     private TextView textView;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         context = this;
         bt1 = findViewById(R.id.buttonFirst);
         bt2 = findViewById(R.id.buttonSecond);
+        imgbt = (ImageButton)findViewById(R.id.imageButtonTian);
         textView = findViewById(R.id.textView1);
 
         //jump by startActivity
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,1);
             }
         });
+
+        //image button 的监听
+        imgbt.setOnClickListener(this);
     }
 
     //jump and recive return data
@@ -56,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
             String content = data.getStringExtra("data");
             textView.setText(content);
         }
+    }
+
+    //接口方式
+    @Override
+    public void onClick(View v) {
+        Log.i("tag","接口方式实现监听");
     }
 }
 

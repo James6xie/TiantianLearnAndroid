@@ -52,7 +52,7 @@
             app:srcCompat="@mipmap/ic_launcher" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtonTian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/img2" />
