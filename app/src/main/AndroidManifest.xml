@@ -21,6 +21,10 @@
         <activity android:name=".SActivity">
 
         </activity>
+
+        <activity android:name=".MySpinner">
+
+        </activity>
     </application>
 
 </manifest>

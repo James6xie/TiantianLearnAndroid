@@ -26,6 +26,13 @@
             android:layout_height="wrap_content"
             android:text="Second boot" />
 
+        <Button
+            android:id="@+id/buttonSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go Spinner" />
+
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"

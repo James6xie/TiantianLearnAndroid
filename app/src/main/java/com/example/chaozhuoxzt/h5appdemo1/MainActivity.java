@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button bt1;
     private Button bt2;
+    private Button btSpinner;
     private ImageButton imgbt;
     private Context context;
     private TextView textView;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt2 = findViewById(R.id.buttonSecond);
         imgbt = (ImageButton)findViewById(R.id.imageButtonTian);
         textView = findViewById(R.id.textView1);
+        btSpinner = findViewById(R.id.buttonSpinner);
 
         //jump by startActivity
         bt1.setOnClickListener(new MyOnClickListener() {
@@ -46,6 +48,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 super.onClick(v);
                 Intent intent = new Intent(context,SActivity.class);
                 startActivityForResult(intent,1);
+            }
+        });
+
+        //jump by startActivity
+        btSpinner.setOnClickListener(new MyOnClickListener() {
+            @Override
+            public void onClick(View v) {
+                super.onClick(v);//call base class onClick
+                Intent intent = new Intent(context,MySpinner.class);
+                startActivity(intent);
             }
         });
 
