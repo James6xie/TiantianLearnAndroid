@@ -25,6 +25,10 @@
         <activity android:name=".MySpinner">
 
         </activity>
+
+        <activity android:name=".MyCheckBox">
+
+        </activity>
     </application>
 
 </manifest>

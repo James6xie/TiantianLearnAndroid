@@ -12,10 +12,17 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <Spinner
-            android:id="@+id/spinnerTest"
-            android:layout_width="wrap_content"
+        <CheckBox
+            android:id="@+id/checkBox_meat"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/planets_array" />
+            android:text="meat"
+            />
+        <CheckBox
+            android:id="@+id/checkBox_cheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cheese"
+            />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

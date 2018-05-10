@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bt1;
     private Button bt2;
     private Button btSpinner;
+    private Button checkBox;
     private ImageButton imgbt;
     private Context context;
     private TextView textView;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imgbt = (ImageButton)findViewById(R.id.imageButtonTian);
         textView = findViewById(R.id.textView1);
         btSpinner = findViewById(R.id.buttonSpinner);
+        checkBox = findViewById(R.id.checkBox);
 
         //jump by startActivity
         bt1.setOnClickListener(new MyOnClickListener() {
@@ -57,6 +60,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View v) {
                 super.onClick(v);//call base class onClick
                 Intent intent = new Intent(context,MySpinner.class);
+                startActivity(intent);
+            }
+        });
+
+        checkBox.setOnClickListener(new MyOnClickListener(){
+            @Override
+            public void onClick(View v) {
+                super.onClick(v);
+                Intent intent = new Intent(context,MyCheckBox.class);
                 startActivity(intent);
             }
         });

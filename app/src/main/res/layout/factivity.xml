@@ -32,6 +32,11 @@
             android:layout_height="wrap_content"
             android:text="Go Spinner" />
 
+        <Button
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go CheckBox" />
 
         <TextView
             android:id="@+id/textView1"
@@ -61,12 +66,12 @@
             android:hint="Pleas input you name..."
             />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#f0f0f0"
-            app:srcCompat="@mipmap/ic_launcher" />
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#f0f0f0"-->
+            <!--app:srcCompat="@mipmap/ic_launcher" />-->
 
         <ImageButton
             android:id="@+id/imageButtonTian"
